@@ -32,6 +32,6 @@ namespace Shapes
             CircleCount++;
         }
 
-        public override string ToString() => base.ToString() + $"r: {Radius:f2}cm";
+        public override string ToString() => base.ToString() + $"r: {Radius:f2}cm   {_area}";
     }
 }

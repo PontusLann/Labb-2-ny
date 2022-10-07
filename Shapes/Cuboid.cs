@@ -36,7 +36,7 @@ namespace Shapes
         {
             this._center = new Vector3(center.X, center.Y, center.Z);
 
-            this._area = 6f * (MathF.Pow(size.X, 2));
+            this._area = 2 * ((size.X * size.Y) + (size.Y * size.Z) + (size.Z * size.X));
 
             this._volume = MathF.Pow(size.X, 3);
 
@@ -74,11 +74,11 @@ namespace Shapes
         {
             if (IsCube)
             {
-                return base.ToString() + $"w:h:l: {WidthCube}cm";
+                return base.ToString() + $"w:h:l: {WidthCube}cm   {_area}";
             }
             else
             {
-                return base.ToString() + $"w: {Width}cm h: {Height}cm l: {Length}cm";
+                return base.ToString() + $"w: {Width}cm h: {Height}cm l: {Length}cm    {_area}";
             }
         }
     }

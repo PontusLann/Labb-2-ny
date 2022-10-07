@@ -69,11 +69,11 @@ namespace Shapes
         {
             if (IsSquare)
             {
-                return base.ToString() + $"w:h: {WidthSquare.ToString("f1", commaToDot)}cm";
+                return base.ToString() + $"w:h: {WidthSquare.ToString("f1", commaToDot)}cm   {_area}";
             }
             else
             {
-                return base.ToString() + $"w: {Width.ToString("f1", commaToDot)}cm h: {Height.ToString("f1", commaToDot)}cm";
+                return base.ToString() + $"w: {Width.ToString("f1", commaToDot)}cm h: {Height.ToString("f1", commaToDot)}cm   {_area}";
             }
         }
     }

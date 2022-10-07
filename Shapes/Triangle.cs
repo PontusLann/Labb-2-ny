@@ -77,7 +77,7 @@ namespace Shapes
             TriangleCount++;
         }
 
-        public override string ToString() => base.ToString() + $"p1({P1.X.ToString("f1", commaToDot)} {P1.Y.ToString("f1", commaToDot)}), p2({P2.X.ToString("f1", commaToDot)} {P2.Y.ToString("f1", commaToDot)}, p3({P3.X.ToString("f1", commaToDot)} {P3.Y.ToString("f1", commaToDot)})";
+        public override string ToString() => base.ToString() + $"p1({P1.X.ToString("f1", commaToDot)} {P1.Y.ToString("f1", commaToDot)}), p2({P2.X.ToString("f1", commaToDot)} {P2.Y.ToString("f1", commaToDot)}, p3({P3.X.ToString("f1", commaToDot)} {P3.Y.ToString("f1", commaToDot)})    {_area}";
     }
 }
 
