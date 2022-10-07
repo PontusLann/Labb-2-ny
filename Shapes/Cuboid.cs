@@ -74,11 +74,11 @@ namespace Shapes
         {
             if (IsCube)
             {
-                return base.ToString() + $"w:h:l: {WidthCube}cm   {_area}";
+                return base.ToString() + $"w:h:l: {WidthCube}cm";
             }
             else
             {
-                return base.ToString() + $"w: {Width}cm h: {Height}cm l: {Length}cm    {_area}";
+                return base.ToString() + $"w: {Width}cm h: {Height}cm l: {Length}cm";
             }
         }
     }

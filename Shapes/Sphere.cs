@@ -34,6 +34,6 @@ namespace Shapes
             SphereVolume = _volume;
         }
 
-        public override string ToString() => base.ToString() + $"r: {Radius:f2}cm    {_area}";
+        public override string ToString() => base.ToString() + $"r: {Radius:f2}cm";
     }
 }
