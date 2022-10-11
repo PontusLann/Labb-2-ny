@@ -6,7 +6,7 @@ namespace Shapes
     public class Circle : Shape2D
     {
         private string _shape = "Circle";
-        public override string Shape => _shape;
+        public override string Shapes => _shape;
 
         private float _circumFerence;
         public override float CircumFerence => _circumFerence;
@@ -16,6 +16,8 @@ namespace Shapes
 
         private float _area;
         public override float Area => _area;
+
+        public float Radius;
 
         public Circle(Vector2 center, float radius)
         {

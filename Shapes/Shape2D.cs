@@ -7,15 +7,6 @@ namespace Shapes
     {
         public abstract float CircumFerence { get; }
 
-        public abstract string Shape { get; }
-
-        public float Height;
-
-        public float Width;
-
-        public float WidthSquare;
-
-        public float Radius;
-        public override string ToString() => $"{Shape} @({Center.X.ToString("f1", commaToDot)}, {Center.Y.ToString("f1", commaToDot)})";
+        public override string ToString() => $"{Shapes} @({Center.X.ToString("f1", commaToDot)}, {Center.Y.ToString("f1", commaToDot)})";
     }
 }

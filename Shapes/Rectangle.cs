@@ -5,7 +5,7 @@ namespace Shapes
 
     public class Rectangle : Shape2D
     {
-        public override string Shape => IsSquare ? "Square" : "Rectangle";
+        public override string Shapes => IsSquare ? "Square" : "Rectangle";
 
         private float _circumFerence;
         public override float CircumFerence => _circumFerence;
@@ -15,6 +15,12 @@ namespace Shapes
 
         private float _area;
         public override float Area => _area;
+
+        public float Height;
+
+        public float Width;
+
+        public float WidthSquare;
 
         public bool IsSquare
         {

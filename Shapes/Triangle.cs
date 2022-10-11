@@ -6,7 +6,7 @@ namespace Shapes
     public class Triangle : Shape2D
     {
         private string _shape = "Triangle";
-        public override string Shape => _shape;
+        public override string Shapes => _shape;
 
         private float _circumFerence;
         public override float CircumFerence => _circumFerence;

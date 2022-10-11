@@ -5,7 +5,7 @@ namespace Shapes
 
     public class Cuboid : Shape3D
     {
-        public override string Shape => IsCube ? "Cube" : "Cuboid";
+        public override string Shapes => IsCube ? "Cube" : "Cuboid";
 
         public float _volume;
         public override float Volume => _volume;
@@ -15,6 +15,14 @@ namespace Shapes
 
         public float _area;
         public override float Area => _area;
+
+        public float Height;
+
+        public float Width;
+
+        public float Length;
+
+        public float WidthCube;
 
         public bool IsCube
         {
@@ -32,13 +40,15 @@ namespace Shapes
 
         }
 
+     
+
         public Cuboid(Vector3 center, Vector3 size)
         {
             this._center = new Vector3(center.X, center.Y, center.Z);
 
             this._area = 2 * ((size.X * size.Y) + (size.Y * size.Z) + (size.Z * size.X));
 
-            this._volume = MathF.Pow(size.X, 3);
+            this._volume = size.X * size.Y * size.Z;
 
             Height = size.X;
 
