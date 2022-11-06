@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using Shapes;
+﻿using Shapes;
 using static Shapes.Shape;
 
 Shape[] shapes = new Shape[20];
@@ -7,7 +6,7 @@ Shape[] shapes = new Shape[20];
 
 for (int i = 0; i < shapes.Length; i++)
 {
-    
+
     shapes[i] = Shape.GenerateShape();
     Console.WriteLine(shapes[i]);
 }
@@ -24,9 +23,17 @@ PrintMostOccurred();
 
 void PrintAveregeArea()
 {
-    AverageArea = AverageArea / 20;
-    Console.WriteLine($"The average area for all shapes is {AverageArea}cm^2");
-} 
+    float averageOfAllShapes = 0;
+    float averageArea = 0;
+    for (int i = 0; i < shapes.Length; i++)
+    {
+
+        averageArea += shapes[i].Area;
+    }
+    averageOfAllShapes = averageArea / shapes.Length;
+
+    Console.WriteLine($"The average area for all shapes is {averageOfAllShapes}cm^2");
+}
 
 void PrintBiggestVolume()
 {

@@ -56,8 +56,6 @@ namespace Shapes
 
             Length = size.Z;
 
-            AverageArea += (int)_area;
-
             CuboidCount++;
 
             CuboidVolume = _volume;
@@ -73,8 +71,6 @@ namespace Shapes
 
             WidthCube = width;
 
-            AverageArea += (int)_area;
-
             CubeCount++;
 
             CubeVolume = _volume;
@@ -84,11 +80,11 @@ namespace Shapes
         {
             if (IsCube)
             {
-                return base.ToString() + $"w:h:l: {WidthCube}cm";
+                return base.ToString() + $"w:h:l: {WidthCube}cm    area:{_area}";
             }
             else
             {
-                return base.ToString() + $"w: {Width}cm h: {Height}cm l: {Length}cm";
+                return base.ToString() + $"w: {Width}cm h: {Height}cm l: {Length}cm    area:{_area}";
             }
         }
     }

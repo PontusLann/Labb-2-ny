@@ -15,8 +15,6 @@ namespace Shapes
 
         public abstract string Shapes { get; }
 
-        public static int AverageArea;
-
         public static int TriangleCircumference;
 
         public static int CircleCount;

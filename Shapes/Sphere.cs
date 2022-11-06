@@ -29,8 +29,6 @@ namespace Shapes
 
             Radius = radius;
 
-            AverageArea += (int)_area;
-
             SphereCount++;
 
             SphereVolume = _volume;
@@ -38,6 +36,6 @@ namespace Shapes
 
 
 
-        public override string ToString() => base.ToString() + $"r: {Radius:f2}cm";
+        public override string ToString() => base.ToString() + $"r: {Radius:f2}cm        area: {_area}";
     }
 }

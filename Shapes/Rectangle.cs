@@ -51,8 +51,6 @@ namespace Shapes
 
             Width = size.X;
 
-            AverageArea = (int)_area;
-
             RectangleCount++;
         }
 
@@ -66,8 +64,6 @@ namespace Shapes
 
             WidthSquare = width;
 
-            AverageArea += (int)_area;
-
             SquareCount++;
         }
 
@@ -75,11 +71,11 @@ namespace Shapes
         {
             if (IsSquare)
             {
-                return base.ToString() + $"w:h: {WidthSquare.ToString("f1", commaToDot)}cm";
+                return base.ToString() + $"w:h: {WidthSquare.ToString("f1", commaToDot)}cm     area:{_area}";
             }
             else
             {
-                return base.ToString() + $"w: {Width.ToString("f1", commaToDot)}cm h: {Height.ToString("f1", commaToDot)}cm";
+                return base.ToString() + $"w: {Width.ToString("f1", commaToDot)}cm h: {Height.ToString("f1", commaToDot)}cm     area:{_area}";
             }
         }
     }
